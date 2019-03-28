@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 class MainPage(Page):
     def __init__(self, driver):
         self.locator = MainPageLocatars
-        super(MainPage, self).__init__(driver)  # Python3 version
+        super().__init__(driver)  # Python3 version
 
     def check_page_loaded(self):
         return True if self.find_element(*self.locator.LOGO) else False
