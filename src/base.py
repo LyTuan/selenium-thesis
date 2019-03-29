@@ -7,6 +7,7 @@ class Page(object):
     def __init__(self, driver, base_url='http://www.app.com/'):
         self.base_url = base_url
         self.driver = driver
+        self.driver.maximize_window()
         self.timout = 30
 
     def find_element(self, *locator):

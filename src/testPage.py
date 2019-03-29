@@ -45,7 +45,6 @@ class TestPages(unittest.TestCase):
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_valid_user("LYTUAN")
-        time.sleep(20)
         self.assertIn("user/login", result.get_url())
 
     #
