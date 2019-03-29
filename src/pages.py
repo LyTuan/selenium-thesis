@@ -43,8 +43,8 @@ class LoginPage(Page):
         self.find_element(*self.locator.PASSWORD).send_keys(users.get_user(user)["password"])
 
     def click_login_button(self):
-        # self.find_element(*self.locator.SUBMIT).click()
-        self.hover(*self.locator.SUBMIT)
+        self.find_element(*self.locator.SUBMIT).click()
+        # self.hover(*self.locator.SUBMIT)
 
     def login(self, user):
         self.enter_email(user)
