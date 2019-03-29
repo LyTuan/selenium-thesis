@@ -1,9 +1,7 @@
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from base import Page
-from locators import *
-import users
-from selenium.webdriver.support.ui import WebDriverWait
+from src.base import Page
+from src.locators import *
+from src import users
 
 
 # Page opjects are written in this module.
@@ -36,7 +34,7 @@ class MainPage(Page):
 class LoginPage(Page):
     def __init__(self, driver):
         self.locator = LoginPageLocatars
-        super(LoginPage, self).__init__(driver)  # Python2 version
+        super().__init__(driver)  # Python2 version
 
     def enter_email(self, user):
         self.find_element(*self.locator.EMAIL).send_keys(users.get_user(user)["email"])

@@ -1,9 +1,7 @@
 import unittest
 from selenium import webdriver
-from pages import *
-from testCases import test_cases
-from locators import *
-from selenium.webdriver.common.by import By
+from src.pages import *
+from src.testCases import test_cases
 import time
 
 
