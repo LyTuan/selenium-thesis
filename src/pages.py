@@ -66,3 +66,8 @@ class HomePage(Page):
 
 class SignUpPage(Page):
     pass
+
+class CustomerCarePage(Page):
+    def __init__(self, driver):
+        self.locator = CustomerCareLocatars
+        self.driver = driver

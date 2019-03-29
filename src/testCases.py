@@ -18,5 +18,6 @@ testCases = [
     ['Blocker', 'In Main page, when user click "Sing in" button, he should see Sign in Page'],
     ['Blocker', 'In Login Page, when user login with a valid user, he should see Home Page'],
     ['Blocker', 'In Login Page, when user login with a in-valid user, he should see Error Message'],
-    ['Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn']
+    ['Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
+    ['Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page']
 ]

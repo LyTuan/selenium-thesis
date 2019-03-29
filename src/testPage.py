@@ -74,6 +74,17 @@ class TestLoginPage(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
+class TestCustomerCarePage():
+    def setUp(self):
+        self.driver = webdriver.Chrome('../driver/chromedriver.exe')
+        self.driver.get('http://lazada.vn/')
+
+    def test_load_customer_page(self):
+        print("\n"+ str(test_cases(7)))
+        customerCare = CustomerCarePage(self.driver)
+
+    def tearDown(self):
+        self.driver.close()
 
 if __name__ == "__main__":
     test_main_page = unittest.TestLoader().loadTestsFromTestCase(TestMainPages)

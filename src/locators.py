@@ -17,3 +17,7 @@ class LoginPageLocatars(object):
     EMAIL = (By.CSS_SELECTOR, '.mod-input-loginName > input')
     SUBMIT = (By.CSS_SELECTOR, '.mod-login-btn > button')
     ERROR_MESSAGE = (By.ID, 'message_error')
+
+
+class CustomerCareLocatars(object):
+    CUSTOMER_CARE = (By.ID, 'topActionCustomCare')
