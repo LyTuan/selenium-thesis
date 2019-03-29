@@ -3,6 +3,7 @@ from selenium import webdriver
 from src.pages import *
 from src.testCases import test_cases
 import time
+from HtmlTestRunner import HTMLTestRunner
 
 
 # I am using python unittest for asserting cases.
@@ -25,7 +26,7 @@ class TestPages(unittest.TestCase):
         print("\n" + str(test_cases(1)))
         page = MainPage(self.driver)
         search_result = page.search_item("pin dell insprison 3537")
-        self.assertIn("Nexus 5", search_result)
+        self.assertIn("62 items", search_result)
 
     def test_sign_up_button(self):
         print("\n" + str(test_cases(2)))
@@ -61,4 +62,6 @@ class TestPages(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(TestPages)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    runner = HTMLTestRunner(output='../output')
+    runner.run(suite)
+

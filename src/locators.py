@@ -9,7 +9,7 @@ class MainPageLocatars(object):
     SIGNUP = (By.CSS_SELECTOR, '#anonSignup > a')
     LOGIN = (By.CSS_SELECTOR, '#anonLogin > a')
     SEARCH = (By.ID, 'q')
-    SEARCH_LIST = (By.CLASS_NAME, 'a-link-normal')
+    SEARCH_LIST = (By.CLASS_NAME, 'c1DXz4')
 
 
 class LoginPageLocatars(object):
