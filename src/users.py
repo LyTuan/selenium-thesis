@@ -4,7 +4,7 @@ from operator import itemgetter
 
 users = [
 	{"name": "LYTUAN", "email": "0389700133", "password": "HAPPY1524@a"},
-	{"name": "valid_user", "email": "validUser@yahoo.com", "password": "ValidPassword"},
+	{"name": "invalid_user", "email": "0389700133", "password": "ValidPassword"},
 	{"name": "Staff2", "email": "staff@test.com", "password": "qwert1235"},
 	{"name": "Admin0", "email": "admin@test.com", "password": "qwert1234"},
 	{"name": "Admin1", "email": "admin@test.com", "password": "qwert1234"},

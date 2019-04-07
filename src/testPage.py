@@ -22,18 +22,18 @@ class TestMainPages(unittest.TestCase):
         page = MainPage(self.driver)
         self.assertTrue(page.check_page_loaded())
 
-    def test_title_page(self):
-        print("\n" + str(test_cases(6)))
-        page = MainPage(self.driver)
-        self.assertIn("Shopping online - Buy online on Lazada.vn", page.get_title())
-        # Case test fail
-        # self.assertIn("Ly Van Tuan Test", page.get_title())
-
-    def test_search_item(self):
-        print("\n" + str(test_cases(1)))
-        page = MainPage(self.driver)
-        search_result = page.search_item("pin dell insprison 3537")
-        self.assertIn("62 items", search_result)
+    # def test_title_page(self):
+    #     print("\n" + str(test_cases(6)))
+    #     page = MainPage(self.driver)
+    #     self.assertIn("Shopping online - Buy online on Lazada.vn", page.get_title())
+    #     # Case test fail
+    #     # self.assertIn("Ly Van Tuan Test", page.get_title())
+    #
+    # def test_search_item(self):
+    #     print("\n" + str(test_cases(1)))
+    #     page = MainPage(self.driver)
+    #     search_result = page.search_item("pin dell insprison 3537")
+    #     self.assertIn("62 items", search_result)
 
     def tearDown(self):
         self.driver.close()
@@ -44,32 +44,33 @@ class TestLoginPage(unittest.TestCase):
         self.driver = webdriver.Chrome('../driver/chromedriver.exe')
         self.driver.get('https://lazada.vn')
 
-    def test_sign_up_button(self):
-        print("\n" + str(test_cases(2)))
-        page = MainPage(self.driver)
-        signUpPage = page.click_sign_up_button()
-        self.assertIn("user/register", signUpPage.get_url())
-
-    def test_sign_in_button(self):
-        print("\n" + str(test_cases(3)))
-        page = MainPage(self.driver)
-        loginPage = page.click_sign_in_button()
-        self.assertIn("user/login", loginPage.get_url())
+    # def test_sign_up_button(self):
+    #     print("\n" + str(test_cases(2)))
+    #     page = MainPage(self.driver)
+    #     signUpPage = page.click_sign_up_button()
+    #     self.assertIn("user/register", signUpPage.get_url())
+    #
+    # def test_sign_in_button(self):
+    #     print("\n" + str(test_cases(3)))
+    #     page = MainPage(self.driver)
+    #     loginPage = page.click_sign_in_button()
+    #     self.assertIn("user/login", loginPage.get_url())
 
     def test_sign_in_with_valid_user(self):
         print("\n" + str(test_cases(4)))
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_valid_user("LYTUAN")
+        time.sleep(30)
         self.assertIn("user/login", result.get_url())
 
 
-    # def test_sign_in_with_in_valid_user(self):
-    #     print("\n" + str(test_cases(5)))
-    #     mainPage = MainPage(self.driver)
-    #     loginPage = mainPage.click_sign_in_button()
-    #     result = loginPage.login_with_in_valid_user("invalid_user")
-    #     self.assertIn("There was a problem with your request", result)
+    def test_sign_in_with_in_valid_user(self):
+        print("\n" + str(test_cases(5)))
+        mainPage = MainPage(self.driver)
+        loginPage = mainPage.click_sign_in_button()
+        result = loginPage.login_with_in_valid_user("invalid_user")
+        self.assertIn("There was a problem with your request", result)
 
     def tearDown(self):
         self.driver.close()

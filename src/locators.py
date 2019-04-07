@@ -15,8 +15,8 @@ class MainPageLocatars(object):
 class LoginPageLocatars(object):
     PASSWORD = (By.CSS_SELECTOR, '.mod-input-password > input')
     EMAIL = (By.CSS_SELECTOR, '.mod-input-loginName > input')
-    SUBMIT = (By.CSS_SELECTOR, '.mod-login-btn > button')
-    ERROR_MESSAGE = (By.ID, 'message_error')
+    SUBMIT = (By.CLASS_NAME, 'slidetounlock')
+    ERROR_MESSAGE = (By.CLASS_NAME, 'next-feedback-content')
 
 
 class CustomerCareLocatars(object):

@@ -1,0 +1,481 @@
+{
+  "id": "1633ffdf-6150-476b-9cc2-389f0782fc4d",
+  "version": "2.0",
+  "name": "Lazada",
+  "url": "https://lazada.vn",
+  "tests": [{
+    "id": "445265e0-408a-4b7a-944f-c3d0703dc7ee",
+    "name": "test1",
+    "commands": [{
+      "id": "84b6b34b-6331-4e81-9e1b-e2b05f0df79c",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e49b5faa-dd63-4e2f-8116-2d7e211181eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "969c80d9-8a57-49bf-a061-88bbbbd3ab83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.topper",
+      "targets": [
+        ["css=.topper", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72a21259-6c1c-4401-8c5f-78f65c0f0d7d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Tours",
+      "targets": [
+        ["linkText=New Tours", "linkText"],
+        ["css=.dropdown:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New Tours')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/test/newtours/']", "xpath:href"],
+        ["xpath=//div/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Tours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1eef7d-5c51-469c-b326-b41fbfa1edfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6)",
+      "targets": [
+        ["css=div:nth-child(6)", "css:finder"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48b3c9de-2f3f-4707-9c4c-935997b9ed02",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Welcome: Mercury Tours",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aef6227-e135-40b4-b9d8-15f0e32afc25",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef054605-b02d-4967-be8d-728e7bfa6c38",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "invalidUNN"
+    }, {
+      "id": "7f86404e-129c-4b43-80ea-8182c4abbee9",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "957f9c32-22d4-4d2d-a99b-2fc4ea4b5b53",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "invalidPWD"
+    }, {
+      "id": "d04d8152-2d24-433d-9ef7-2585a6091d95",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td/table/tbody/tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e8d7e4b-56b9-4def-8d68-72289f67a139",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f77f276d-68fa-4fe5-bc44-7129c2181931",
+    "name": "testLoginValid",
+    "commands": [{
+      "id": "872e9fce-fdae-4536-bc6c-4ce00f0a785c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.lazada.vn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa0f9473-bce7-41ea-8019-01e46299f9f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40bd83cc-0373-4231-b1e7-80d2e4f73229",
+      "comment": "",
+      "command": "click",
+      "target": "id=anonLogin",
+      "targets": [
+        ["id=anonLogin", "id"],
+        ["css=#anonLogin", "css:finder"],
+        ["xpath=//div[@id='anonLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='topActionLinks']/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8f345d4-9a2a-4444-bddd-42e9b6a7fd0c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#anonLogin > .grey",
+      "targets": [
+        ["css=#anonLogin > .grey", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='anonLogin']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//member.lazada.vn/user/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b29603b-0efb-4580-952e-32a41c5f023e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#anonLogin > .grey",
+      "targets": [
+        ["css=#anonLogin > .grey", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='anonLogin']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//member.lazada.vn/user/login?spm=a2o4n.home.header.d5.1905e182jH5fPi')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23c62663-2a5b-4b1f-8051-56b19b874bac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mod-input-loginName > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38f4cf1c-4501-4465-b130-812587397dd1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mod-input-loginName > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "0389700133"
+    }, {
+      "id": "b3b7bc6a-7ad3-4d09-8d75-c9ad0e63b40d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mod-input-password > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2b88239-5711-43c0-b4aa-858cd150c964",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mod-input-password > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "HAPPY1524@a"
+    }, {
+      "id": "923eb49e-5050-45f0-b651-0bf78dd2748c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-btn",
+      "targets": [
+        ["css=.next-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d84d36a-eba7-4cc7-8410-bf01653087b5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a093a8a3-4e61-40b6-b7e1-ab29b40fb961",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=myAccountTrigger",
+      "targets": [
+        ["id=myAccountTrigger", "id"],
+        ["css=#myAccountTrigger", "css:finder"],
+        ["xpath=//span[@id='myAccountTrigger']", "xpath:attributes"],
+        ["xpath=//div[@id='topActionUserAccont']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"]
+      ],
+      "value": "LÝ VĂN TUẤN'S ACCOUNT"
+    }, {
+      "id": "e5d4f792-dcb6-4e83-9c74-6e254299347f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8f213e24-cdcc-407a-a834-3b110e235368",
+    "name": "testLoginInValid",
+    "commands": [{
+      "id": "66bba434-0abf-4251-85e8-7c7081c1d956",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.lazada.vn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fadc20f-2d4b-485f-b81c-cac0fb33dbbb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7825817a-4eaf-46b7-8aaa-1376746ca24e",
+      "comment": "",
+      "command": "click",
+      "target": "id=anonLogin",
+      "targets": [
+        ["id=anonLogin", "id"],
+        ["css=#anonLogin", "css:finder"],
+        ["xpath=//div[@id='anonLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='topActionLinks']/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c17247ed-486a-47a4-ae30-9a6fcd254c02",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#anonLogin > .grey",
+      "targets": [
+        ["css=#anonLogin > .grey", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='anonLogin']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//member.lazada.vn/user/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aae5ea6c-ce28-45d3-a6a0-9980761fda72",
+      "comment": "",
+      "command": "click",
+      "target": "css=#anonLogin > .grey",
+      "targets": [
+        ["css=#anonLogin > .grey", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='anonLogin']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//member.lazada.vn/user/login?spm=a2o4n.home.header.d5.1905e182jH5fPi')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "292a4a69-4ce6-4c00-8ff2-f25bd84d793c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mod-input-loginName > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa8e3c49-4398-4b89-aef5-34ebcc295ffb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mod-input-loginName > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "0389700133"
+    }, {
+      "id": "61cec58e-8c7a-4701-8919-b26a31b858a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mod-input-password > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb342787-9190-479b-b2ad-4a59490a86ce",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mod-input-password > input",
+      "targets": [
+        ["css=.focus > input", "css:finder"],
+        ["xpath=//input[@value='HAPPY1524@a']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "1d8a9938-1dce-43a0-bed5-c7948b836fce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-btn",
+      "targets": [
+        ["css=.next-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf38aca6-5689-41e5-9156-83428d975303",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce3fe456-3d24-4a89-abb6-8f6a6d86029c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=myAccountTrigger",
+      "targets": [
+        ["id=myAccountTrigger", "id"],
+        ["css=#myAccountTrigger", "css:finder"],
+        ["xpath=//span[@id='myAccountTrigger']", "xpath:attributes"],
+        ["xpath=//div[@id='topActionUserAccont']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"]
+      ],
+      "value": "LÝ VĂN TUẤN'S ACCOUNT"
+    }, {
+      "id": "7dc874ec-ec22-49f9-bb22-fed7760a776b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "981929bc-4f2e-42bf-a957-b8f65ade447d",
+    "name": "testHoverInput",
+    "commands": [{
+      "id": "cc1510cc-1edb-454d-aa9b-263a19fcd6b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.lazada.vn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c95f196d-f64c-4d9e-8638-443447beb659",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1aefceb-05e1-4ed3-ab96-bf10ebeb9e23",
+      "comment": "",
+      "command": "click",
+      "target": "css=#anonLogin > .grey",
+      "targets": [
+        ["css=#anonLogin > .grey", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='anonLogin']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//member.lazada.vn/user/login?spm=a2o4n.home.header.d5.1905e182eVjOAr')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ecc2d7-6144-49f2-8a51-caf515f12e7d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button.next-btn.next-btn-primary.next-btn-large",
+      "targets": [
+        ["css=.next-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[2]/form/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": "background-color=#f57225"
+    }]
+  }],
+  "suites": [{
+    "id": "7ea58fa6-d8c3-4928-b8a0-46a405f55ffd",
+    "name": "Lazada",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8f213e24-cdcc-407a-a834-3b110e235368", "f77f276d-68fa-4fe5-bc44-7129c2181931"]
+  }],
+  "urls": ["http://demo.guru99.com/", "https://lazada.vn/"],
+  "plugins": []
+}

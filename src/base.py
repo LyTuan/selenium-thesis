@@ -30,5 +30,7 @@ class Page(object):
 
     def move_slider(self, *locator):
         element = self.find_element(*locator)
+        width = element.size.get('width')
+        print(element.location)
         slider = ActionChains(self.driver).click_and_hold(element)
-        slider.move_by_offset(40, 0).release().perform()
+        slider.move_by_offset(width, 0).release().perform()
