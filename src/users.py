@@ -3,7 +3,7 @@ from operator import itemgetter
 # we can store test data in this module like users
 
 users = [
-	{"name": "LYTUAN", "email": "0389700133", "password": "HAPPY1524@a"},
+	{"name": "LYTUAN", "email": "0389700133", "password": "zE0liV"},
 	{"name": "invalid_user", "email": "0389700133", "password": "ValidPassword"},
 	{"name": "Staff2", "email": "staff@test.com", "password": "qwert1235"},
 	{"name": "Admin0", "email": "admin@test.com", "password": "qwert1234"},
