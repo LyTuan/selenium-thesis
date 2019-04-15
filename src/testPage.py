@@ -22,18 +22,18 @@ class TestMainPages(unittest.TestCase):
         page = MainPage(self.driver)
         self.assertTrue(page.check_page_loaded())
 
-    # def test_title_page(self):
-    #     print("\n" + str(test_cases(6)))
-    #     page = MainPage(self.driver)
-    #     self.assertIn("Mua Hàng Trực Tuyến Uy Tín với Giá Rẻ Hơn tại Tiki.vn", page.get_title())
-    #     # Case test fail
-    #     # self.assertIn("Ly Van Tuan Test", page.get_title())
-    #
-    # def test_search_item(self):
-    #     print("\n" + str(test_cases(1)))
-    #     page = MainPage(self.driver)
-    #     search_result = page.search_item("pin dell insprison 3537")
-    #     self.assertIn("62 items", search_result)
+    def test_title_page(self):
+        print("\n" + str(test_cases(6)))
+        page = MainPage(self.driver)
+        self.assertIn("Mua Hàng Trực Tuyến Uy Tín với Giá Rẻ Hơn tại Tiki.vn", page.get_title())
+        # Case test fail
+        # self.assertIn("Ly Van Tuan Test", page.get_title())
+
+    def test_search_item(self):
+        print("\n" + str(test_cases(1)))
+        page = MainPage(self.driver)
+        search_result = page.search_item("pin dell insprison 3537")
+        self.assertIn('39095'.encode('utf-8').decode('utf-8'), search_result.encode('utf-8').decode('utf-8'))
 
     def tearDown(self):
         self.driver.close()
@@ -62,28 +62,33 @@ class TestLoginPage(unittest.TestCase):
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_valid_user("LYTUAN")
-        time.sleep(30)
-        self.assertIn("tuan ly", result)
+        time.sleep(10)
+        self.assertIn("tuan ly 1", result)
 
     def test_sign_in_with_in_valid_user(self):
         print("\n" + str(test_cases(5)))
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_in_valid_user("invalid_user")
-        self.assertIn("There was a problem with your request", result)
+        self.assertIn("Mật khẩu không chính xác", result)
 
     def tearDown(self):
         self.driver.close()
 
 
-class TestCustomerCarePage(unittest.TestCase):
+class TestCartPage(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome('../driver/chromedriver.exe')
         self.driver.get('http://lazada.vn/')
 
-    def test_load_customer_page(self):
-        print("\n"+ str(test_cases(7)))
-        customerCare = CustomerCarePage(self.driver)
+    def test_choose_item(self):
+        print("\n" + str(test_cases(9)))
+
+
+    def test_delete_item(self):
+        print("\n"+ str(test_cases(10)))
+
+
 
     def tearDown(self):
         self.driver.close()

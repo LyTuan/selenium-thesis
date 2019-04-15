@@ -2,7 +2,7 @@ from selenium.webdriver.common.keys import Keys
 from src.base import Page
 from src.locators import *
 from src import users
-
+import time
 # Page opjects are written in this module.
 # Depends on the page functionality we can have more functions for new classes
 
@@ -44,7 +44,6 @@ class LoginPage(Page):
 
     def click_login_button(self):
         self.find_element(*self.locator.SUBMIT).click()
-        # self.move_slider(*self.locator.SUBMIT)
 
     def login(self, user):
         self.enter_email(user)
@@ -53,10 +52,12 @@ class LoginPage(Page):
 
     def login_with_valid_user(self, user):
         self.login(user)
-        return HomePage(self.driver)
+        time.sleep(5)
+        return self.find_element(*self.locator.NAME_USER).text
 
     def login_with_in_valid_user(self, user):
         self.login(user)
+        time.sleep(5)
         return self.find_element(*self.locator.ERROR_MESSAGE).text
         # return "Invalid user!"
 
@@ -67,7 +68,12 @@ class HomePage(Page):
 class SignUpPage(Page):
     pass
 
-class CustomerCarePage(Page):
+class CartPage(Page):
     def __init__(self, driver):
-        self.locator = CustomerCareLocatars
+        self.locator = CartLocatars
         self.driver = driver
+    def delete_an_item(self):
+        self.find_element(*self.locator.CART).click()
+
+    def choose_an_item(self):
+        self.find_element(*self.locator.)

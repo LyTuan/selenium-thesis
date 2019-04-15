@@ -8,16 +8,17 @@ class MainPageLocatars(object):
     ACCOUNT = (By.ID, 'header-user')
     SIGNUP = (By.CSS_SELECTOR, '#anonSignup > a')
     LOGIN = (By.CLASS_NAME, 'user-name-login')
-    SEARCH = (By.ID, 'q')
-    SEARCH_LIST = (By.CLASS_NAME, 'c1DXz4')
+    SEARCH = (By.NAME, 'q')
+    SEARCH_LIST = (By.CSS_SELECTOR, '.filter-list-box > h4')
 
 
 class LoginPageLocatars(object):
     PASSWORD = (By.ID, 'login_password')
     EMAIL = (By.ID, 'popup-login-email')
     SUBMIT = (By.ID, 'login_popup_submit')
-    ERROR_MESSAGE = (By.CLASS_NAME, 'help-block')
+    ERROR_MESSAGE = (By.CSS_SELECTOR, '#popup_password > .help-block')
+    NAME_USER = (By.CSS_SELECTOR, '#header-user > div > div > b')
 
-
-class CustomerCareLocatars(object):
-    CUSTOMER_CARE = (By.ID, 'topActionCustomCare')
+class CartLocatars(object):
+    CART = (By.CSS_SELECTOR, '#header-cart > a')
+    MAIN_NAV  = (By.CLASS_NAME, 'main-nav-toggle')
