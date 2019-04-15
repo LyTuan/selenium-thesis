@@ -3,7 +3,6 @@ from src.base import Page
 from src.locators import *
 from src import users
 
-
 # Page opjects are written in this module.
 # Depends on the page functionality we can have more functions for new classes
 
@@ -27,7 +26,8 @@ class MainPage(Page):
 
     def click_sign_in_button(self):
         self.hover(*self.locator.ACCOUNT)
-        self.find_element(*self.locator.LOGIN).click()
+        self.click(*self.locator.LOGIN)
+        # self.find_element(*self.locator.LOGIN).click()
         return LoginPage(self.driver)
 
 
@@ -43,10 +43,8 @@ class LoginPage(Page):
         self.find_element(*self.locator.PASSWORD).send_keys(users.get_user(user)["password"])
 
     def click_login_button(self):
-        if self.find_element(*self.locator.SUBMIT_BUTTON):
-            self.find_element(*self.locator.SUBMIT_BUTTON).click()
-        else:
-            self.move_slider(*self.locator.SUBMIT_SLIDE)
+        self.find_element(*self.locator.SUBMIT).click()
+        # self.move_slider(*self.locator.SUBMIT)
 
     def login(self, user):
         self.enter_email(user)

@@ -10,12 +10,12 @@ from HtmlTestRunner import HTMLTestRunner
 # In this module, there should be test cases.
 # If you want to run it, you should type: python <module-name.py>
 
+
 class TestMainPages(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome('../driver/chromedriver.exe')
-        # self.driver = webdriver.Firefox()
-        self.driver.get("https://www.lazada.vn")
+        self.driver.get("https://tiki.vn")
 
     def test_page_load(self):
         print("\n" + str(test_cases(0)))
@@ -25,7 +25,7 @@ class TestMainPages(unittest.TestCase):
     # def test_title_page(self):
     #     print("\n" + str(test_cases(6)))
     #     page = MainPage(self.driver)
-    #     self.assertIn("Shopping online - Buy online on Lazada.vn", page.get_title())
+    #     self.assertIn("Mua Hàng Trực Tuyến Uy Tín với Giá Rẻ Hơn tại Tiki.vn", page.get_title())
     #     # Case test fail
     #     # self.assertIn("Ly Van Tuan Test", page.get_title())
     #
@@ -38,11 +38,12 @@ class TestMainPages(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
+
 class TestLoginPage(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome('../driver/chromedriver.exe')
-        self.driver.get('https://lazada.vn')
+        self.driver.get('https://tiki.vn')
 
     # def test_sign_up_button(self):
     #     print("\n" + str(test_cases(2)))
@@ -61,9 +62,8 @@ class TestLoginPage(unittest.TestCase):
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_valid_user("LYTUAN")
-        time.sleep(60)
-        self.assertIn("user/login", result.get_url())
-
+        time.sleep(30)
+        self.assertIn("tuan ly", result)
 
     def test_sign_in_with_in_valid_user(self):
         print("\n" + str(test_cases(5)))
@@ -75,7 +75,8 @@ class TestLoginPage(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
-class TestCustomerCarePage():
+
+class TestCustomerCarePage(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome('../driver/chromedriver.exe')
         self.driver.get('http://lazada.vn/')
@@ -86,6 +87,7 @@ class TestCustomerCarePage():
 
     def tearDown(self):
         self.driver.close()
+
 
 if __name__ == "__main__":
     test_main_page = unittest.TestLoader().loadTestsFromTestCase(TestMainPages)

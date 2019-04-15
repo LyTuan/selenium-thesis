@@ -12,12 +12,12 @@ def test_cases(number):
 
 testCases = [
     # [severity, description]
-    ['Blocker', 'when user goes to main page, page should be loaded'],
-    ['Blocker', 'In Main page, when user search "pin dell insprison3537" button, he should see result for "62 items"'],
-    ['Blocker', 'In Main page, when user click "Sing up" button, he should see Sign up Page'],
-    ['Blocker', 'In Main page, when user click "Sing in" button, he should see Sign in Page'],
-    ['Blocker', 'In Login Page, when user login with a valid user, he should see Home Page'],
-    ['Blocker', 'In Login Page, when user login with a in-valid user, he should see Error Message'],
+    ['Low', 'when user goes to main page, page should be loaded'],
+    ['Normal', 'In Main page, when user search "pin dell insprison3537" button, he should see result for "62 items"'],
+    ['Normal', 'In Main page, when user click "Sing up" button, he should see Sign up Page'],
+    ['High', 'In Main page, when user click "Sing in" button, he should see Sign in Page'],
+    ['Low', 'In Login Page, when user login with a valid user, he should see Home Page'],
+    ['Normal', 'In Login Page, when user login with a in-valid user, he should see Error Message'],
     ['Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
     ['Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page']
 ]
