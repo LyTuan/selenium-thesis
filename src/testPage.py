@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from src.pages import *
 from src.testCases import test_cases
+from src.locators import *
 import time
 from HtmlTestRunner import HTMLTestRunner
 import pickle
@@ -62,7 +63,7 @@ class TestLoginPage(unittest.TestCase):
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_valid_user("LYTUAN")
-        time.sleep(30)
+        time.sleep(10)
         self.assertIn("tuan ly", result)
 
     def test_sign_in_with_in_valid_user(self):
@@ -70,7 +71,7 @@ class TestLoginPage(unittest.TestCase):
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_in_valid_user("invalid_user")
-        self.assertIn("There was a problem with your request", result)
+        self.assertIn("Mật khẩu phải dài từ 6 đến 32 ký tự", result)
 
     def tearDown(self):
         self.driver.close()

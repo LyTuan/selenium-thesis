@@ -53,7 +53,7 @@ class LoginPage(Page):
 
     def login_with_valid_user(self, user):
         self.login(user)
-        return HomePage(self.driver)
+        return self.find_element(*self.locator.NAME_USER).text
 
     def login_with_in_valid_user(self, user):
         self.login(user)

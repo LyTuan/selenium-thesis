@@ -17,7 +17,7 @@ class LoginPageLocatars(object):
     EMAIL = (By.ID, 'popup-login-email')
     SUBMIT = (By.ID, 'login_popup_submit')
     ERROR_MESSAGE = (By.CLASS_NAME, 'help-block')
-
+    NAME_USER = (By.CSS_SELECTOR, '#header-user >div > div > b')
 
 class CustomerCareLocatars(object):
     CUSTOMER_CARE = (By.ID, 'topActionCustomCare')
