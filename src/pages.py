@@ -65,6 +65,11 @@ class LoginPage(Page):
         time.sleep(5)
         return self.find_element(*self.locator.ERROR_MESSAGE_EMAIL).text
 
+    def login_with_no_value(self, user):
+        self.login(user)
+        time.sleep(5)
+        return self.find_element(*self.locator.ERROR_MESSAGE_NO_VALUE).text
+
 class HomePage(Page):
     pass
 
