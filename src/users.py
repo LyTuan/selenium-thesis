@@ -4,11 +4,11 @@ from operator import itemgetter
 
 users = [
 	{"name": "DoanThao", "email": "0368775123", "password": "02071991"},
-	{"name": "invalid_user", "email": "", "password": ""},
-	{"name": "invalid_email", "email": "staff@test.com", "password": "qwert1235"},
+	{"name": "empty_value", "email": "", "password": ""},
+	{"name": "invalid_email", "email": "staff@test.com", "password": "02071991"},
 	{"name": "invalid_password", "email": "0368775123", "password": "qwert1234"},
-	{"name": "Admin1", "email": "admin@test.com", "password": "qwert1234"},
-	{"name": "Admin2", "email": "admin@test.com", "password": "qwert1234"},
+	{"name": "empty_email_right_password", "email": "", "password": "02071991"},
+	{"name": "right_email_empty_password", "email": "0368775123", "password": ""},
 ]
 
 def get_user(name):
