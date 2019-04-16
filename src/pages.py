@@ -59,7 +59,11 @@ class LoginPage(Page):
         self.login(user)
         time.sleep(5)
         return self.find_element(*self.locator.ERROR_MESSAGE).text
-        # return "Invalid user!"
+
+    def login_with_invalid_email(self, user):
+        self.login(user)
+        time.sleep(5)
+        return self.find_element(*self.locator.ERROR_MESSAGE_EMAIL).text
 
 class HomePage(Page):
     pass
@@ -76,4 +80,10 @@ class CartPage(Page):
         self.find_element(*self.locator.CART).click()
 
     def choose_an_item(self):
-        self.find_element(*self.locator.)
+        main_nav = self.find_element(*self.locator.MAIN_NAV)
+        items = main_nav.find_elements_by_tag_name('li')
+        for item in items:
+            text = item.text
+            if "Điện Thoại" in text:
+                sub_items = item.find_elements_by_tag_name('li')
+

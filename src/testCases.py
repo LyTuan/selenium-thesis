@@ -17,9 +17,11 @@ testCases = [
     ['3','Normal', 'In Main page, when user click "Sing up" button, he should see Sign up Page'],
     ['4','High', 'In Main page, when user click "Sing in" button, he should see Sign in Page'],
     ['5','Low', 'In Login Page, when user login with a valid user, he should see Home Page'],
-    ['6','Normal', 'In Login Page, when user login with a in-valid user, he should see Error Message'],
-    ['7','Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
-    ['8','Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page'],
-    ['9', 'Normal', 'In Cart page, when user click  choose an item, he should see that item in Cart Page'],
-    ['10', 'Normal', 'In Cart page, when user click delete an item, he should not see that item in Cart Page']
+    ['6','Normal', 'In Login Page, when user login with a in-valid user, he should see Error Message: "Vui lòng nhập Email hoặc Số điện thoại"'],
+    ['7','Normal', 'In Login Page, when user login with a in-valid email, he should see Error Message: "Tài khoản không tồn tại"'],
+    ['8','Normal', 'In Login Page, when user login with a in-valid password, he should see Error Message: "Mật khẩu không chính xác"'],
+    ['9','Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
+    ['10','Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page'],
+    ['11', 'Normal', 'In Cart page, when user click  choose an item, he should see that item in Cart Page'],
+    ['12', 'Normal', 'In Cart page, when user click delete an item, he should not see that item in Cart Page']
 ]

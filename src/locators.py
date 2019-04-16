@@ -17,8 +17,9 @@ class LoginPageLocatars(object):
     EMAIL = (By.ID, 'popup-login-email')
     SUBMIT = (By.ID, 'login_popup_submit')
     ERROR_MESSAGE = (By.CSS_SELECTOR, '#popup_password > .help-block')
+    ERROR_MESSAGE_EMAIL = (By.CSS_SELECTOR, '#popup_login > .help-block')
     NAME_USER = (By.CSS_SELECTOR, '#header-user > div > div > b')
 
 class CartLocatars(object):
     CART = (By.CSS_SELECTOR, '#header-cart > a')
-    MAIN_NAV  = (By.CLASS_NAME, 'main-nav-toggle')
+    MAIN_NAV  = (By.CSS_SELECTOR, '')

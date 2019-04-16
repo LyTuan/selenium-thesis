@@ -3,10 +3,10 @@ from operator import itemgetter
 # we can store test data in this module like users
 
 users = [
-	{"name": "LYTUAN", "email": "0389700133", "password": "zE0liV"},
-	{"name": "invalid_user", "email": "0389700133", "password": "ValidPassword"},
-	{"name": "Staff2", "email": "staff@test.com", "password": "qwert1235"},
-	{"name": "Admin0", "email": "admin@test.com", "password": "qwert1234"},
+	{"name": "DoanThao", "email": "0368775123", "password": "02071991"},
+	{"name": "invalid_user", "email": "", "password": ""},
+	{"name": "invalid_email", "email": "staff@test.com", "password": "qwert1235"},
+	{"name": "invalid_password", "email": "0368775123", "password": "qwert1234"},
 	{"name": "Admin1", "email": "admin@test.com", "password": "qwert1234"},
 	{"name": "Admin2", "email": "admin@test.com", "password": "qwert1234"},
 ]
