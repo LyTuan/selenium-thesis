@@ -25,5 +25,9 @@ testCases = [
     ['10','Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
     ['11','Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page'],
     ['12', 'Normal', 'In Cart page, when user click  choose an item, he should see that item in Cart Page'],
-    ['13', 'Normal', 'In Cart page, when user click delete an item, he should not see that item in Cart Page']
+    ['13', 'Normal', 'In Cart page, when user click delete an item, he should not see that item in Cart Page'],
+    ['14', 'Normal', 'In Main page, when user search "sách" button, he should see result for 12 kết quả (0.05 giây)'],
+    ['15', 'Normal', 'In Main page, when user search "SáCH" button, he should see result for 4200 kết quả (0.11 giây)'],
+    ['16', 'Normal', 'In Main page, when user search "SÁCH" button, he should see result for 4200 kết quả (0.11 giây)'],
+    ['17', 'Normal', 'In Main page, when user search "Sách" button, he should see result for 4199 kết quả (0.11 giây)'],
 ]
