@@ -33,7 +33,7 @@ class TestMainPages(unittest.TestCase):
         print("\n" + str(test_cases(1)))
         page = MainPage(self.driver)
         search_result = page.search_item("pin dell insprison 3537")
-        self.assertIn('7384'.encode('utf-8').decode('utf-8'), search_result.encode('utf-8').decode('utf-8'))
+        self.assertIn('10'.encode('utf-8').decode('utf-8'), search_result.encode('utf-8').decode('utf-8'))
 
     def tearDown(self):
         self.driver.close()
@@ -69,22 +69,22 @@ class TestLoginPage(unittest.TestCase):
         print("\n" + str(test_cases(5)))
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
-        result = loginPage.login_with_in_valid_user("invalid_user")
-        self.assertIn("Vui lòng nhập Email hoặc Số điện thoại", result)
+        result = loginPage.login_with_no_value("invalid_user")
+        self.assertIn("Vui lòng nhập Email hoặc Số điện thoại".encode('utf-8').decode('utf-8'), result.encode('utf-8').decode('utf-8'))
 
     def test_sign_in_with_in_valid_email(self):
         print("\n" + str(test_cases(5)))
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
-        result = loginPage.login_with_in_valid_user("invalid_email")
-        self.assertIn("Tài khoản không tồn tại", result)
+        result = loginPage.login_with_invalid_email("invalid_email")
+        self.assertIn("Tài khoản không tồn tại".encode('utf-8').decode('utf-8'), result.encode('utf-8').decode('utf-8'))
 
     def test_sign_in_with_in_valid_password(self):
         print("\n" + str(test_cases(5)))
         mainPage = MainPage(self.driver)
         loginPage = mainPage.click_sign_in_button()
         result = loginPage.login_with_in_valid_user("invalid_password")
-        self.assertIn("Mật khẩu không chính xác", result)
+        self.assertIn("Mật khẩu không chính xác".encode('utf-8').decode('utf-8'), result.encode('utf-8').decode('utf-8'))
 
 
     def tearDown(self):
