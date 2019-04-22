@@ -23,4 +23,5 @@ class LoginPageLocatars(object):
 
 class CartLocatars(object):
     CART = (By.CSS_SELECTOR, '#header-cart > a')
-    MAIN_NAV  = (By.CSS_SELECTOR, '')
+    MAIN_NAV  = (By.XPATH, 'xpath=//span[contains(.,"Điện Thoại - Máy Tính Bảng")]')
+

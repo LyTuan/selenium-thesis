@@ -128,11 +128,11 @@ class TestCartPage(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    test_main_page = unittest.TestLoader().loadTestsFromTestCase(TestMainPages)
-    test_login_page = unittest.TestLoader().loadTestsFromTestCase(TestLoginPage)
-    suite = unittest.TestSuite([test_main_page, test_login_page])
-    # test_cart_page = unittest.TestLoader().loadTestsFromTestCase(TestCartPage)
-    # suite = unittest.TestSuite([test_cart_page])
+    # test_main_page = unittest.TestLoader().loadTestsFromTestCase(TestMainPages)
+    # test_login_page = unittest.TestLoader().loadTestsFromTestCase(TestLoginPage)
+    # suite = unittest.TestSuite([test_main_page, test_login_page])
+    test_cart_page = unittest.TestLoader().loadTestsFromTestCase(TestCartPage)
+    suite = unittest.TestSuite([test_cart_page])
     runner = HTMLTestRunner(output='../output')
     runner.run(suite)
 

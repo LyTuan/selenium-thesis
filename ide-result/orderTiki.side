@@ -1,0 +1,135 @@
+{
+  "id": "3491ca31-33f6-4425-a748-a7469a5e55c4",
+  "version": "2.0",
+  "name": "orderTiki",
+  "url": "https://tiki.vn",
+  "tests": [{
+    "id": "60baa118-a0d1-4376-9825-e88c0d5bc8c6",
+    "name": "orderTiki",
+    "commands": [{
+      "id": "bfc81b3b-4ce4-445c-b091-6d6aad0df2ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da05e269-0759-415d-bbfd-c8d6c6fee7d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1378x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd596db8-edb4-4b07-8a9d-7cd5bb0da7d4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Điện Thoại - Máy Tính Bảng')]",
+      "targets": [
+        ["css=.active > span:nth-child(2)", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/nav/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//nav/ul/li/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Điện Thoại - Máy Tính Bảng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a01a76c-be09-4d0b-aa13-0639cb5c2b95",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19e57165-2132-42d1-a83e-02f72720a421",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-box-list > .product-item:nth-child(2) .content",
+      "targets": [
+        ["css=.product-box-list > .product-item:nth-child(2) .content", "css:finder"],
+        ["xpath=//div[4]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28938ed9-638e-470b-b2f6-99820813efca",
+      "comment": "",
+      "command": "click",
+      "target": "id=#mainAddToCart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9846b4c5-3185-49a9-b6a5-8a32abe5689d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#\\#mainAddToCart > .text",
+      "targets": [
+        ["css=#\\#mainAddToCart > .text", "css:finder"],
+        ["xpath=//button[@id='#mainAddToCart']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CHỌN MUA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3289eb11-3a77-4bfd-96a7-a624bbaf674b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-cart",
+      "targets": [
+        ["css=.header-cart", "css:finder"],
+        ["xpath=//div[@id='header-cart']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/checkout/cart')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f995c0c4-392b-4329-a5c9-fa7fe5a6dbcb",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray",
+      "targets": [
+        ["linkText=iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray", "linkText"],
+        ["css=.badge-tikinow-a a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray')]", "xpath:link"],
+        ["xpath=//form[@id='shopping-cart']/div/div[2]/div/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tiki.vn/ipad-wifi-128gb-new-2018-hang-chinh-hang-space-gray-p1929221.html?src=cart-page&spid=1929223')]", "xpath:href"],
+        ["xpath=//form/div/div[2]/div/div/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray')]", "xpath:innerText"]
+      ],
+      "value": "iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray"
+    }, {
+      "id": "d9e3e64e-d486-4c0a-91fd-47455e23431a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xóa",
+      "targets": [
+        ["linkText=Xóa", "linkText"],
+        ["css=.btn-item-delete", "css:finder"],
+        ["xpath=(//a[contains(text(),'Xóa')])[2]", "xpath:link"],
+        ["xpath=//form[@id='shopping-cart']/div/div[2]/div/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37563f7c-287a-47f1-b0cb-fe3dcaa121fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lbl-shopping-cart > span",
+      "targets": [
+        ["css=.lbl-shopping-cart > span", "css:finder"],
+        ["xpath=//h5/span", "xpath:position"],
+        ["xpath=//span[contains(.,'(0 sản phẩm)')]", "xpath:innerText"]
+      ],
+      "value": "(0 sản phẩm)"
+    }]
+  }],
+  "suites": [{
+    "id": "8a0130c8-c806-46d7-98d6-69369bc92cbd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60baa118-a0d1-4376-9825-e88c0d5bc8c6"]
+  }],
+  "urls": ["https://tiki.vn/"],
+  "plugins": []
+}
