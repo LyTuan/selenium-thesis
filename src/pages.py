@@ -70,7 +70,6 @@ class LoginPage(Page):
         time.sleep(5)
         return self.find_element(*self.locator.ERROR_MESSAGE_NO_VALUE).text
 
-
 class HomePage(Page):
     pass
 
