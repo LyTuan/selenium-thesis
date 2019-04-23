@@ -1,0 +1,86 @@
+{
+  "id": "633839da-4e07-4ed3-ae49-452cc29e2dce",
+  "version": "2.0",
+  "name": "tikiSearch",
+  "url": "https://tiki.vn",
+  "tests": [{
+    "id": "a991e961-5c86-4d26-a39a-9107539772db",
+    "name": "testSearch",
+    "commands": [{
+      "id": "eb27a51c-3cad-4a4d-9735-7f886331e19a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "370edfe9-84d7-480a-9503-714ce54a07ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09df7aa3-ad07-4100-9b15-aae2d0115bc0",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d150ffd0-a9d9-49db-8e82-43084928bc2f",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sách"
+    }, {
+      "id": "5fd4d487-7d00-4995-8be7-6329eb4e3f40",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "062b17b0-255c-4a59-90fe-f2a52e86d003",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h4[contains(.,'4248 kết quả ')]",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'4251 kết quả (0.07 giây)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5bdaea67-36b9-420f-9b37-23e595d6297e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a991e961-5c86-4d26-a39a-9107539772db"]
+  }],
+  "urls": ["https://tiki.vn/"],
+  "plugins": []
+}

@@ -9,7 +9,7 @@ import unittest, time, re
 
 class TestOrder(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome("C:\\Users\\admin\\Documents\\tuanlv24\\selenium\\driver\\chromedriver.exe")
         self.driver.implicitly_wait(30)
         self.base_url = "https://www.katalon.com/"
         self.verificationErrors = []
