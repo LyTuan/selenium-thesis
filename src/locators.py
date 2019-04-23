@@ -22,6 +22,9 @@ class LoginPageLocatars(object):
     NAME_USER = (By.CSS_SELECTOR, '#header-user > div > div > b')
 
 class CartLocatars(object):
-    CART = (By.CSS_SELECTOR, '#header-cart > a')
-    MAIN_NAV  = (By.XPATH, 'xpath=//span[contains(.,"Điện Thoại - Máy Tính Bảng")]')
+    CART = (By.CSS_SELECTOR, '.header-cart')
+    MAIN_NAV  = (By.XPATH, '//span[contains(.,"Điện Thoại - Máy Tính Bảng")]')
+    ITEM = (By.CSS_SELECTOR, '.product-box-list > .product-item:nth-child(2) .content')
+    ADD_TO_CART = (By.ID, '#mainAddToCart')
+    NAME_ITEM = (By.CSS_SELECTOR, '.badge-tikinow-a>.name>a')
 

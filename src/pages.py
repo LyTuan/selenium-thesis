@@ -86,4 +86,9 @@ class CartPage(Page):
 
     def choose_an_item(self):
         self.find_element(*self.locator.MAIN_NAV).click()
+        self.find_element(*self.locator.ITEM).click()
+        self.find_element(*self.locator.ADD_TO_CART).click()
+        time.sleep(3)
+        self.find_element(*self.locator.CART).click()
+        return self.find_element(*self.locator.NAME_ITEM).text
 

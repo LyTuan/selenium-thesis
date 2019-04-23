@@ -114,9 +114,11 @@ class TestCartPage(unittest.TestCase):
         self.driver.get('https://tiki.vn/')
 
     def test_choose_item(self):
-        print("\n" + str(test_cases(9)))
+        print("\n" + str(test_cases(10)))
         cartPage = CartPage(self.driver)
-        cartPage.choose_an_item()
+        result = cartPage.choose_an_item()
+        time.sleep(3)
+        self.assertIn("iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray", result)
 
     # def test_delete_item(self):
     #     print("\n"+ str(test_cases(10)))

@@ -22,7 +22,7 @@ testCases = [
     ['7','Normal', 'In Login Page, when user login with a in-valid email, right password he should see Error Message: "Số điện thoại không hợp lệ"'],
     ['8','Normal', 'In Login Page, when user login with a right email, wrong password he should see Error Message: "Mật khẩu không chính xác"'],
     ['9','Low', 'In Login Page, when user login with a valid user, he should see Home Page'],
-    ['10','Normal', 'when user goes to main page, the title of page is Shopping online - Buy online on Lazada.vn'],
+    ['10','Normal', 'when user choose an item, he should see it in the cart'],
     ['11','Normal', 'In Main page, when user click CUSTOMEMR CARE, he should see Customer Care page'],
     ['12', 'Normal', 'In Cart page, when user click  choose an item, he should see that item in Cart Page'],
     ['13', 'Normal', 'In Cart page, when user click delete an item, he should not see that item in Cart Page'],
@@ -30,4 +30,5 @@ testCases = [
     ['15', 'Normal', 'In Main page, when user search "SáCH" button, he should see result for 4200 kết quả (0.11 giây)'],
     ['16', 'Normal', 'In Main page, when user search "SÁCH" button, he should see result for 4200 kết quả (0.11 giây)'],
     ['17', 'Normal', 'In Main page, when user search "Sách" button, he should see result for 4199 kết quả (0.11 giây)'],
+
 ]
