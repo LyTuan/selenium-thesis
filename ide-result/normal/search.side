@@ -1,0 +1,106 @@
+{
+  "id": "293b59bf-c276-470d-85e7-c215d60659f0",
+  "version": "2.0",
+  "name": "search",
+  "url": "https://tiki.vn",
+  "tests": [{
+    "id": "aa6a638f-dbd2-4128-b9f9-064790ebf17f",
+    "name": "testSearch1",
+    "commands": [{
+      "id": "92de072a-6a5d-451c-bf28-c0089e5ec055",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a4e7d58-2543-453e-8507-a6d76ba71056",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1355x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "affe3085-7b0b-4205-b5ce-2f13cc936df5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.icon-search",
+      "targets": [
+        ["css=.icon-search", "css:finder"],
+        ["xpath=//form[@id='search_form']/div/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ceb1c21-a511-4d87-b19b-7ecc28ba46ad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.icon-search",
+      "targets": [
+        ["css=.icon-search", "css:finder"],
+        ["xpath=//form[@id='search_form']/div/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3fc02b5-efdd-47a9-a6ea-921421a88b8d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sách"
+    }, {
+      "id": "da666e7a-a1c0-4e57-b16f-babdbd00b5ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=button > span",
+      "targets": [
+        ["css=button > span", "css:finder"],
+        ["xpath=//form[@id='search_form']/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tìm kiếm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac9e65d-e729-4daf-8d8e-beaac4f62438",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=button > span",
+      "targets": [
+        ["css=button > span", "css:finder"],
+        ["xpath=//form[@id='search_form']/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tìm kiếm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e63eea5e-fbe3-4c1f-a732-6e447126228f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4:nth-child(2)",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'4192 kết quả (0.12 giây)')]", "xpath:innerText"]
+      ],
+      "value": "4192 kết quả (0.12 giây)"
+    }]
+  }],
+  "suites": [{
+    "id": "26538fa5-d82a-453e-8a0a-84e2767c87c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aa6a638f-dbd2-4128-b9f9-064790ebf17f"]
+  }],
+  "urls": ["https://tiki.vn/"],
+  "plugins": []
+}

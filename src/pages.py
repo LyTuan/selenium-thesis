@@ -85,10 +85,5 @@ class CartPage(Page):
         self.find_element(*self.locator.CART).click()
 
     def choose_an_item(self):
-        main_nav = self.find_element(*self.locator.MAIN_NAV)
-        items = main_nav.find_elements_by_tag_name('li')
-        for item in items:
-            text = item.text
-            if "Điện Thoại" in text:
-                sub_items = item.find_elements_by_tag_name('li')
+        self.find_element(*self.locator.MAIN_NAV).click()
 
