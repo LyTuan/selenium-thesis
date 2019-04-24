@@ -120,10 +120,6 @@ class TestCartPage(unittest.TestCase):
         time.sleep(3)
         self.assertIn("iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray", result)
 
-    # def test_delete_item(self):
-    #     print("\n"+ str(test_cases(10)))
-
-
 
     def tearDown(self):
         self.driver.close()
