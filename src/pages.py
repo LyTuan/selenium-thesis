@@ -17,6 +17,7 @@ class MainPage(Page):
     def search_item(self, item):
         self.find_element(*self.locator.SEARCH).send_keys(item)
         self.find_element(*self.locator.SEARCH).send_keys(Keys.ENTER)
+        time.sleep(3)
         return self.find_element(*self.locator.SEARCH_LIST).text
 
     def click_sign_up_button(self):

@@ -808,6 +808,13 @@
       ],
       "value": ""
     }, {
+      "id": "e48e37a9-d952-4e06-800a-613214079d2c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#header-user > div > div > b",
+      "targets": [],
+      "value": "10"
+    }, {
       "id": "0a1ed151-45eb-4021-8372-38ce72f15d03",
       "comment": "",
       "command": "assertText",

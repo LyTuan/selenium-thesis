@@ -5,14 +5,14 @@
   "url": "https://tiki.vn",
   "tests": [{
     "id": "a991e961-5c86-4d26-a39a-9107539772db",
-    "name": "testSearch",
+    "name": "testSearch_sach",
     "commands": [{
       "id": "eb27a51c-3cad-4a4d-9735-7f886331e19a",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
-      "value": ""
+      "value": "sách"
     }, {
       "id": "370edfe9-84d7-480a-9503-714ce54a07ce",
       "comment": "",
@@ -63,7 +63,214 @@
       "id": "062b17b0-255c-4a59-90fe-f2a52e86d003",
       "comment": "",
       "command": "verifyElementPresent",
-      "target": "xpath=//h4[contains(.,'4248 kết quả ')]",
+      "target": "xpath=//h4[contains(.,'4362 kết quả ')]",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'4251 kết quả (0.07 giây)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "821431ab-8869-41c7-acf5-8196a134790c",
+    "name": "testSearch_SACH",
+    "commands": [{
+      "id": "227365b4-842c-4742-b40a-c40819944756",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae8fbb8c-e865-4f19-aba2-a7f595bfa5f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a41fae7-d283-4233-b531-d67cea13c69b",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e9f2e9-5e95-4ca2-b333-14e41096e0c1",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SÁCH"
+    }, {
+      "id": "4aad3c7c-35cb-448b-9aa9-8936f2debd46",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "875315b2-c775-405f-961d-3097596cc57c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h4[contains(.,'4362 kết quả ')]",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'4251 kết quả (0.07 giây)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e71cffbb-5b1e-462c-99e8-4a97c174347b",
+    "name": "testSearch_SaCH",
+    "commands": [{
+      "id": "a34a5e00-3117-4349-a4e6-bbd5e7609a6e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": "SáCH"
+    }, {
+      "id": "04790dda-99a8-4514-848b-460a61458be6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0615b0d8-1643-4b48-ac34-5f4985246a8a",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee8441f4-b2f3-407a-90b4-7021a3b66b3a",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sách"
+    }, {
+      "id": "e509dae6-1b7f-4edf-a97a-1b91128399e7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "16c2746b-c8c2-41ed-b7f1-e1e2ae84e3f7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h4[contains(.,'11 kết quả ')]",
+      "targets": [
+        ["css=h4:nth-child(2)", "css:finder"],
+        ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'4251 kết quả (0.07 giây)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d0736b99-5f5e-45fc-a094-5925b7013abd",
+    "name": "testSearch_Sach",
+    "commands": [{
+      "id": "2bda53a1-505a-4c76-88af-dc1597ce138c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9915cfdd-7daa-47df-b077-27c0e8c4a5e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d606ef46-f4bf-4ede-aa49-c8679ce27499",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e929a41-85b1-4373-bb9d-18d8e8a818dd",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sách"
+    }, {
+      "id": "af6bf106-24c6-4115-8f1f-f6658c6b5f71",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.flex > input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ecf3f056-0a9a-43ad-bc0c-dda2bc0622a1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h4[contains(.,'4362 kết quả ')]",
       "targets": [
         ["css=h4:nth-child(2)", "css:finder"],
         ["xpath=//h4[@name='results-count-with-execution-time']", "xpath:attributes"],
@@ -79,7 +286,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["a991e961-5c86-4d26-a39a-9107539772db"]
+    "tests": ["a991e961-5c86-4d26-a39a-9107539772db", "821431ab-8869-41c7-acf5-8196a134790c", "e71cffbb-5b1e-462c-99e8-4a97c174347b", "d0736b99-5f5e-45fc-a094-5925b7013abd"]
   }],
   "urls": ["https://tiki.vn/"],
   "plugins": []

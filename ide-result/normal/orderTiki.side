@@ -94,7 +94,7 @@
         ["xpath=//form/div/div[2]/div/div/p/a", "xpath:position"],
         ["xpath=//a[contains(.,'iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray')]", "xpath:innerText"]
       ],
-      "value": "iPad WiFi 128GB New 2018 - Hàng Chính Hãng - Space Gray"
+      "value": "Điện Thoại Samsung Galaxy S10 (128GB/8GB) - Hàng Chính Hãng - Đen Ngân Hà"
     }, {
       "id": "d9e3e64e-d486-4c0a-91fd-47455e23431a",
       "comment": "",
