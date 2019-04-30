@@ -1,5 +1,7 @@
 java -jar selenium-server-standalone-3.141.59.jar -role hub
-java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.100.1:4444/grid/register/ -port 3456
-java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.100.1:4444/grid/register/ -port 4567
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.100.12:4444/grid/register/ -port 3456
+java -Dwebdirver.gecko.driver="C:\Users\tuanly\PycharmProjects\selenium-thesis\selenium-grid\firefoxdriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.100.12:4444/grid/register/ -port 4568
 
 https://gist.github.com/dzitkowskik/0fc641cf59af0dc3de62
+
+C:\Users\tuanly\PycharmProjects\selenium-thesis\venv\Scripts\python.exe testGrid.py
